@@ -12,6 +12,9 @@
       rel="stylesheet"
     />
 
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/5cb82b043a.js" crossorigin="anonymous"></script>
+
     <!-- daisyUi  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
@@ -25,7 +28,170 @@
     <!-- custom css  -->
     <link rel="stylesheet" href="css/geometry.css" />
   </head>
-  <body style="font-family:  'Inter', sans-serif;">
+  <body style="font-family:  'Inter', sans-serif;" class="max-w-[95%] mx-auto">
+    <header class="mt-[20px]">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <div>
+            <a class="normal-case text-2xl">Interactive</a>
+            <p>Geometry Genius</p>
+            </div>
+          </div>
+          <div class="flex-none">
+             <button class="btn btn-success btn-sm text-white">Blog</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex lg:flex-row flex-col-reverse gap-3 lg:mt-5">
+       <!-- cards container  -->
+       <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 gap-6">
+        <!--Triangle card -->
+        <div class="card border-solid border-[1px] border-[#dad3d3]">
+          <figure class="px-10 pt-10">
+            <img src="/images/triangle.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body text-center items-center">
+            <h2 class="card-title">Triange</h2>
+            <p>Area (A) = 0.5 X b X h</p>
+            <p>
+              <span>b= <span>4</span> cm h= <span>6</span> cm</span>
+              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+            </p>
+            <p class="flex justify-between mt-5">
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="h"> <span class="mx-2">cm</span>
+              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
+            </p>
+            <div class="w-full mt-5">
+              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Rectangle card  -->
+        <div class="card border-solid border-[1px] border-[#dad3d3]">
+          <figure class="px-10 pt-10">
+            <img src="/images/rectangle.png" alt="rectangle" class="rounded-xl" />
+          </figure>
+          <div class="card-body text-center items-center">
+            <h2 class="card-title">Rectangle</h2>
+            <p>Area (A) = w X l</p>
+            <p>
+              <span>w= <span>9</span> cm l= <span>7</span> cm</span>
+              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+            </p>
+            <p class="flex justify-between mt-5">
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="w"> <span class="mx-2">cm</span>
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="l"> <span class="mx-2">cm</span>
+              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
+            </p>
+            <div class="w-full mt-5">
+              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Parallelogram  card -->
+        <div class="card border-solid border-[1px] border-[#dad3d3]">
+          <figure class="px-10 pt-10">
+            <img src="/images/parallelogram.png" alt="Parallelogram" class="rounded-xl" />
+          </figure>
+          <div class="card-body text-center items-center">
+            <h2 class="card-title">Parallelogram</h2>
+            <p>Area (A) = b X h</p>
+            <p>
+              <span>b= <span>12</span> cm h= <span>8</span> cm</span>
+              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+            </p>
+            <p class="flex justify-between mt-5">
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="h"> <span class="mx-2">cm</span>
+              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
+            </p>
+            <div class="w-full mt-5">
+              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Rhombus  card -->
+        <div class="card border-solid border-[1px] border-[#dad3d3]">
+          <figure class="px-10 pt-10">
+            <img src="/images/rhombus.png" alt="Rhombus" class="rounded-xl" />
+          </figure>
+          <div class="card-body text-center items-center">
+            <h2 class="card-title">Rhombus</h2>
+            <p>Area (A) = 0.5 X d<sub>1</sub> X d <sub>2</sub> </p>
+            <p>
+              <span>d<sub>1</sub> = <span>7</span> cm d<sub>2</sub> = <span>9</span> cm</span>
+              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+            </p>
+            <p class="flex justify-between mt-5">
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="d1"> <span class="mx-2">cm</span>
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="d2"> <span class="mx-2">cm</span>
+              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
+            </p>
+            <div class="w-full mt-5">
+              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- Pentagon card   -->
+        <div class="card border-solid border-[1px] border-[#dad3d3]">
+          <figure class="px-10 pt-10">
+            <img src="/images/pentagon.png" alt="Pentagon" class="rounded-xl" />
+          </figure>
+          <div class="card-body text-center items-center">
+            <h2 class="card-title">Pentagon</h2>
+            <p>Area (A) = 0.5 X p X b</p>
+            <p>
+              <span>p= <span>5</span> cm b= <span>8</span> cm</span>
+              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+            </p>
+            <p class="flex justify-between mt-5">
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="p"> <span class="mx-2">cm</span>
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
+              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
+            </p>
+            <div class="w-full mt-5">
+              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!--Ellipse card -->
+        <div class="card border-solid border-[1px] border-[#dad3d3]">
+          <figure class="px-10 pt-10">
+            <img src="/images/ellipse.png" alt="Ellipse" class="rounded-xl" />
+          </figure>
+          <div class="card-body text-center items-center">
+            <h2 class="card-title">Ellipse</h2>
+            <p>Area (A) = πab</p>
+            <p>
+              <span>a= <span>4</span> cm b= <span>6</span> cm</span>
+              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+            </p>
+            <p class="flex justify-between mt-5">
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="a"> <span class="mx-2">cm</span>
+              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
+              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
+            </p>
+            <div class="w-full mt-5">
+              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+            </div>
+          </div>
+        </div>
+       </div>
+       <!-- Area calculation sidebar  -->
+       <div class="text-center lg:my-0 my-10 min-w-[300px]">
+        <h1 class="text-[20px] underline font-bold">Area Calculation</h1>
+       </div>
+    </main>
+    <footer></footer>
     <!-- Custom js  -->
     <script src="js/utilities.js"></script>
     <script src="js/area-calculation.js"></script>
