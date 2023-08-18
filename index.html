@@ -56,17 +56,17 @@
             <h2 class="card-title">Triange</h2>
             <p>Area (A) = 0.5 X b X h</p>
             <p>
-              <span>b= <span>4</span> cm h= <span>6</span> cm</span>
-              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+              <span>b= <span id="triangle-base-text">4</span> cm h= <span id="triangle-height-text">6</span> cm</span>
+              <span id="triangle-edit-btn"><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
             </p>
             <p class="flex justify-between mt-5">
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="h"> <span class="mx-2">cm</span>
-              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <input id="triangle-input-base" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
+              <input id="triangle-input-height" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="h"> <span class="mx-2">cm</span>
+              <span id="triangle-square-box"><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
               <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
             </p>
             <div class="w-full mt-5">
-              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+              <button id="triangle-calculate-btn" class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
             </div>
           </div>
         </div>
@@ -79,17 +79,17 @@
             <h2 class="card-title">Rectangle</h2>
             <p>Area (A) = w X l</p>
             <p>
-              <span>w= <span>9</span> cm l= <span>7</span> cm</span>
-              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+              <span>w= <span id="recatangle-width-text">9</span> cm l= <span id="recatangle-length-text">7</span> cm</span>
+              <span id="recatangle-edit-btn"><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
             </p>
             <p class="flex justify-between mt-5">
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="w"> <span class="mx-2">cm</span>
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="l"> <span class="mx-2">cm</span>
-              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <input id="recatangle-input-width" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="w"> <span class="mx-2">cm</span>
+              <input id="recatangle-input-height" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="l"> <span class="mx-2">cm</span>
+              <span id="recatangle-square-box"><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
               <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
             </p>
             <div class="w-full mt-5">
-              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+              <button id="recatangle-calculate-btn" class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
             </div>
           </div>
         </div>
@@ -102,17 +102,17 @@
             <h2 class="card-title">Parallelogram</h2>
             <p>Area (A) = b X h</p>
             <p>
-              <span>b= <span>12</span> cm h= <span>8</span> cm</span>
-              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+              <span>b= <span id="parallelogram-base-text">12</span> cm h= <span id="parallelogram-height-text">8</span> cm</span>
+              <span id="parallelogram-edit-btn"><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
             </p>
             <p class="flex justify-between mt-5">
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="h"> <span class="mx-2">cm</span>
-              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <input id="parallelogram-input-base" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
+              <input id="parallelogram-input-height" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="h"> <span class="mx-2">cm</span>
+              <span id="parallelogram-square-box"><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
               <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
             </p>
             <div class="w-full mt-5">
-              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+              <button id="parallelogram-calculate-btn" class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
             </div>
           </div>
         </div>
@@ -125,17 +125,17 @@
             <h2 class="card-title">Rhombus</h2>
             <p>Area (A) = 0.5 X d<sub>1</sub> X d <sub>2</sub> </p>
             <p>
-              <span>d<sub>1</sub> = <span>7</span> cm d<sub>2</sub> = <span>9</span> cm</span>
-              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+              <span>d<sub>1</sub> = <span id="rhombus-d1-text">7</span> cm d<sub>2</sub> = <span id="rhombus-d2-text">9</span> cm</span>
+              <span id="rhombus-edit-btn"><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
             </p>
             <p class="flex justify-between mt-5">
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="d1"> <span class="mx-2">cm</span>
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="d2"> <span class="mx-2">cm</span>
-              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <input id="rhombus-input-d1" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="d1"> <span class="mx-2">cm</span>
+              <input id="rhombus-input-d2" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="d2"> <span class="mx-2">cm</span>
+              <span id="rhombus-square-box"><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
               <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
             </p>
             <div class="w-full mt-5">
-              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+              <button id="rhombus-calculate-btn" class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
             </div>
           </div>
         </div>
@@ -148,17 +148,17 @@
             <h2 class="card-title">Pentagon</h2>
             <p>Area (A) = 0.5 X p X b</p>
             <p>
-              <span>p= <span>5</span> cm b= <span>8</span> cm</span>
-              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+              <span>p= <span id="pentagon-p-text">5</span> cm b= <span id="pentagon-b-text">8</span> cm</span>
+              <span id="pentagon-edit-btn"><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
             </p>
             <p class="flex justify-between mt-5">
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="p"> <span class="mx-2">cm</span>
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
-              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <input id="pentagon-input-p" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="p"> <span class="mx-2">cm</span>
+              <input id="pentagon-input-b" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
+              <span id="pentagon-sqaure-box"><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
               <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
             </p>
             <div class="w-full mt-5">
-              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+              <button id="pentagon-calculate-btn" class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
             </div>
           </div>
         </div>
@@ -171,17 +171,17 @@
             <h2 class="card-title">Ellipse</h2>
             <p>Area (A) = πab</p>
             <p>
-              <span>a= <span>4</span> cm b= <span>6</span> cm</span>
-              <span><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
+              <span>a= <span id="ellipse-a-text">4</span> cm b= <span id="ellipse-b-text">6</span> cm</span>
+              <span id="ellipse-edit-btn"><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
             </p>
             <p class="flex justify-between mt-5">
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="a"> <span class="mx-2">cm</span>
-              <input class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
-              <span><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
+              <input id="ellipse-input-a" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="a"> <span class="mx-2">cm</span>
+              <input id="ellipse-input-b" class="bg-[#e2dddd] w-20 rounded-[5px] px-2 border-0 outline-none py-1" type="text" placeholder="b"> <span class="mx-2">cm</span>
+              <span id="ellipse-square-box"><i class="fa-regular fa-square text-3xl cursor-pointer text-[#1090D8]"></i></span>
               <!-- <span><i class="fa-solid fa-square-check text-3xl cursor-pointer text-[#1090D8]"></i></span> -->
             </p>
             <div class="w-full mt-5">
-              <button class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
+              <button id="ellipse-calculate-btn" class="btn btn-primary w-full bg-[#1090D8] hover:bg-[rgb(16,109,216)] border-0">Calculate</button>
             </div>
           </div>
         </div>
