@@ -46,7 +46,7 @@
     </header>
     <main class="flex lg:flex-row flex-col-reverse gap-3 lg:mt-5">
        <!-- cards container  -->
-       <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 gap-6">
+       <div id="cards-container" class="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 gap-6">
         <!--Triangle card -->
         <div class="card border-solid border-[1px] border-[#dad3d3]">
           <figure class="px-10 pt-10">
@@ -125,7 +125,7 @@
             <h2 class="card-title">Rhombus</h2>
             <p>Area (A) = 0.5 X d<sub>1</sub> X d <sub>2</sub> </p>
             <p>
-              <span>d<sub>1</sub> = <span id="rhombus-d1-text">7</span> cm d<sub>2</sub> = <span id="rhombus-d2-text">9</span> cm</span>
+              <span>d&#x2081;=<span id="rhombus-d1-text">7</span> cm d&#x2082;= <span id="rhombus-d2-text">9</span> cm</span>
               <span id="rhombus-edit-btn"><i class="fa-regular fa-pen-to-square text-2xl cursor-pointer"></i></span>
             </p>
             <p class="flex justify-between mt-5">
@@ -187,11 +187,15 @@
         </div>
        </div>
        <!-- Area calculation sidebar  -->
-       <div class="text-center lg:my-0 my-10 min-w-[300px]">
+       <div id="calculation-entry" class="text-center lg:my-0 my-10 min-w-[350px]">
         <h1 class="text-[20px] underline font-bold">Area Calculation</h1>
+        <table id="table"></table>
+        <button id="clear-all-btn" class="btn btn-sm btn-success text-white hidden">Clear All</button>
        </div>
     </main>
     <footer></footer>
+
+    
     <!-- Custom js  -->
     <script src="js/utilities.js"></script>
     <script src="js/area-calculation.js"></script>
